@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by silver1102 (http://jsbin.com/leheget/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="Diamond">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+  <title>Diamond</title>
+<style id="jsbin-css">
+#animate {
+  position: absolute;
+}
+#click {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 65px;
+    color: darkblue;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+</style>
+</head>
+<body>
+  <p id ="click">Click Me!<p>
+  <div id ="animate" onclick="myFunction()"><canvas id="canvas" height="300" width="400" ></div></div>
+</canvas>
+<script id="jsbin-javascript">
+
+
+function myFunction() {
+  var elem = document.getElementById("animate");
+  var pos = 0;
+  var id = setInterval(frame, frame);
+  function frame() {
+    if (pos == 10000) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = Math.random() + 'px';
+      elem.style.left =Math.random() + 'px';
+    }
+var c = document.getElementById('canvas');
+var ctx = c.getContext("2d");
+
+var cw = canvas.width;
+var ch = canvas.height;
+
+
+ctx.beginPath();
+ctx.lineWidth = 2;
+ctx.moveTo(cw*0.7, ch*0.4);
+ctx.lineTo(cw*0.6, ch*0.45);
+ctx.lineTo(cw/2, ch*0.7);
+ctx.closePath();
+ctx.strokeStyle = 'black';
+ctx.stroke();
+ctx.fillStyle = 'rgb(0,'+ Math.floor(Math.random() * 255) +',255, 0.5)';
+ctx.fill();
+
+ctx.beginPath();
+ctx.lineWidth = 2;
+ctx.moveTo(cw*0.3, ch*0.4);
+ctx.lineTo(cw*0.4, ch*0.45);
+ctx.lineTo(cw/2, ch*0.7);
+ctx.closePath();
+ctx.strokeStyle = 'black';
+ctx.stroke();
+ctx.fillStyle = 'rgb(0,'+ Math.floor(Math.random() * 255) +',255, 0.5)';
+ctx.fill();
+
+ctx.beginPath();
+ctx.lineWidth = 2;
+ctx.moveTo(cw*0.4, ch*0.45);
+ctx.lineTo(cw*0.6, ch*0.45);
+ctx.lineTo(cw/2, ch*0.7);
+ctx.closePath();
+ctx.strokeStyle = 'black';
+ctx.stroke();
+ctx.fillStyle = 'rgb(0,'+ Math.floor(Math.random() * 255) +',255, 0.5)';
+ctx.fill();
+
+ctx.beginPath();
+ctx.lineWidth = 2;
+ctx.moveTo(cw*0.3, ch*0.4);
+ctx.lineTo(cw*0.40, ch*0.3);
+ctx.lineTo(cw*0.44, ch*0.33);
+ctx.lineTo(cw*0.4, ch*0.45);
+ctx.closePath();
+ctx.strokeStyle = 'black';
+ctx.stroke();
+ctx.fillStyle = 'rgb(0,'+ Math.floor(Math.random() * 255) +',255, 0.5)';
+ctx.fill();
+
+ctx.beginPath();
+ctx.lineWidth = 2;
+ctx.moveTo(cw*0.40, ch*0.3);
+ctx.lineTo(cw*0.44, ch*0.28);
+ctx.lineTo(cw*0.56, ch*0.28);
+ctx.lineTo(cw*0.60, ch*0.3);
+ctx.lineTo(cw*0.56, ch*0.33);
+ctx.lineTo(cw*0.44, ch*0.33);
+ctx.closePath();
+ctx.strokeStyle = 'black';
+ctx.stroke();
+ctx.fillStyle = 'rgb(0,'+ Math.floor(Math.random() * 255) +',255, 0.5)';
+ctx.fill();
+
+ctx.beginPath();
+ctx.lineWidth = 2;
+ctx.moveTo(cw*0.6, ch*0.45);
+ctx.lineTo(cw*0.56, ch*0.33);
+ctx.lineTo(cw*0.6, ch*0.3);
+ctx.lineTo(cw*0.7, ch*0.4);
+ctx.closePath();
+ctx.strokeStyle = 'black';
+ctx.stroke();
+ctx.fillStyle = 'rgb(0,'+ Math.floor(Math.random() * 255) +',255, 0.5)';
+ctx.fill();
+
+ctx.beginPath();
+ctx.lineWidth = 2;
+ctx.moveTo(cw*0.44, ch*0.33);
+ctx.lineTo(cw*0.56, ch*0.33);
+ctx.lineTo(cw*0.6, ch*0.45);
+ctx.lineTo(cw*0.4, ch*0.45);
+ctx.closePath();
+ctx.strokeStyle = 'black';
+ctx.stroke();
+ctx.fillStyle = 'rgb(0,'+ Math.floor(Math.random() * 255) +',255, 0.5)';
+ctx.fill();
+
+
+  }
+}
+
+
+</script>
+</body>
+</html>
